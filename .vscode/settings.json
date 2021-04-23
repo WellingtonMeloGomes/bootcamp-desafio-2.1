@@ -1,3 +1,10 @@
 {
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "emmet.includeLanguages": {
+        "*.njk": "html" 
+    },
+    "files.associations": {
+        "*.html": "njk"
+    },
+    "explorer.confirmDragAndDrop": false
 }
