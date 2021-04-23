@@ -1,0 +1,74 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Bootcamp - Conteúdos</title>
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <div id="wrapper">
+        <h1>Conteúdos</h1>
+    </div>
+    <div class="cards">
+        <div class="card" id="mapas-com-react-usando-leaflet">
+            <div class="card_image-container">
+                <img src="https://blog.rocketseat.com.br/content/images/2020/11/blog-thumb-utilizando-mapas-no-react-com-leaflet-1.jpg" alt="Mapas com React usando Leaflet" >
+            </div>
+            <div class="card-content">
+                <p class="card-content-title">Mapas com React usando Leaflet</p>
+            </div>
+            <div class="card-info">
+                <p>por <span class="card-info-author">Thiago Marinho</span></p>
+                <p class="card-info-time">11 MIN DE LEITURA</p>
+            </div>
+        </div>
+
+        <div class="card" id="criando-um-blog-com-contador-de-visitas-usando-nextjs-e-mongodb">
+            <div class="card_image-container">
+                <img src="https://blog.rocketseat.com.br/content/images/2020/10/criando-um-blog-com-contador-de-visitas-usando-nextjs-e-mongodb-em-producao.jpg" alt="Criando um Blog com contador de visitas usando NextJS e MongoDB" >
+            </div>
+            <div class="card-content">
+                <p class="card-content-title">Criando um Blog com contador de visitas usando NextJS e MongoDB</p>
+            </div>
+            <div class="card-info">
+                <p>por <span class="card-info-author">Thiago Marinho</span></p>
+                <p class="card-info-time">18 MIN DE LEITURA</p>
+            </div>
+        </div>
+
+        <div class="card" id="como-renomear-varios-arquivos-de-uma-vez-usando-o-terminal">
+            <div class="card_image-container">
+                <img src="https://blog.rocketseat.com.br/content/images/2020/11/thumb-como-renomear-varios-arquivos-de-uma-vez-usando-o-terminal.jpg" alt="Como renomear vários arquivos de uma vez usando o terminal" >
+            </div>
+            <div class="card-content">
+                <p class="card-content-title">Como renomear vários arquivos de uma vez usando o terminal</p>
+            </div>
+            <div class="card-info">
+                <p>por <span class="card-info-author">Thiago Marinho</span></p>
+                <p class="card-info-time">2 MIN DE LEITURA</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay">
+        <div class="modal">
+
+            <div class="modal-function-button">
+                <a class="action-modal">
+                    <i id="maximize-minimize-modal" class="material-icons">maximize</i>
+                </a>
+
+                <a class="close-modal">
+                    <i class="material-icons">close</i>
+                </a>
+            </div>
+
+            <div class="modal-content">
+                <iframe src="https://blog.rocketseat.com.br/como-renomear-varios-arquivos-de-uma-vez-usando-o-terminal/" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+{% endblock %}
