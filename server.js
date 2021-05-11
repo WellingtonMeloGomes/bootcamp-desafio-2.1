@@ -17,7 +17,11 @@ server.get("/", function(req, res){
 })
 
 server.get("/content", function(req, res){
-    return res.render("content", { cursos })
+    const content = {
+        description: "Conteúdo"
+    }
+
+    return res.render("content", { cursos, content })
 })
 
 server.listen(5000, function(){
