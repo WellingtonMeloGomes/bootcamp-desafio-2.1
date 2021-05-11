@@ -1,5 +1,6 @@
 const express = require('express')
 const nunjucks = require('nunjucks')
+const cursos = require('./data');
 
 const server = express()
 
@@ -16,7 +17,7 @@ server.get("/", function(req, res){
 })
 
 server.get("/content", function(req, res){
-    return res.render("content")
+    return res.render("content", { cursos })
 })
 
 server.listen(5000, function(){
