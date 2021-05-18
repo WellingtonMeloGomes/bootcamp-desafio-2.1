@@ -1,0 +1,29 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Bootcamp - Conteúdos</title>
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <div id="wrapper">
+        <h1>Conteúdos</h1>
+    </div>
+    <div class="cards">
+        <div class="card" id="{{ curso.id }}">
+            <div class="card_image-container">
+                <img src="{{ curso.image_url }}" alt="{{ curso.title }}" >
+            </div>
+            <div class="card-content">
+                <p class="card-content-title">{{ curso.title }}</p>
+            </div>
+            <div class="card-info">
+                <p>por <span class="card-info-author">{{ curso.author }}</span></p>
+                <p class="card-info-time">{{ curso.duration }}</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+{% endblock %}

@@ -24,6 +24,18 @@ server.get("/content", function(req, res){
     return res.render("content", { cursos, content })
 })
 
+server.get("/content/:id", function(req, res) {
+    const id = req.params.id;
+    const curso = cursos.find(function(curso){
+        return curso.id == id
+    })
+
+    if (!curso)
+        return res.send("Curse not found!")
+
+    return res.render("courses", {curso})
+})
+
 server.listen(5000, function(){
     console.log("server is running")
 })
